@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		072C95ABE245CCC5D711BB81 /* Pods_imgify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DA90D7D157F0EDAD4CBAF3 /* Pods_imgify.framework */; };
+		C349CD281E3AA8CF00439F0D /* ImgifyFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C349CD271E3AA8CF00439F0D /* ImgifyFetch.swift */; };
+		C36287AB1E3AA7950057826B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36287AA1E3AA7950057826B /* AppDelegate.swift */; };
+		C36287AD1E3AA7950057826B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36287AC1E3AA7950057826B /* ViewController.swift */; };
+		C36287B01E3AA7950057826B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36287AE1E3AA7950057826B /* Main.storyboard */; };
+		C36287B21E3AA7950057826B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36287B11E3AA7950057826B /* Assets.xcassets */; };
+		C36287BD1E3AA7950057826B /* imgifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36287BC1E3AA7950057826B /* imgifyTests.swift */; };
+		C36287C81E3AA7950057826B /* imgifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36287C71E3AA7950057826B /* imgifyUITests.swift */; };
+		C3B9818A1E3AAA8300E0CE7D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B981891E3AAA8300E0CE7D /* Alamofire.framework */; };
+		C3B9818C1E3AAE0100E0CE7D /* Unsplash.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3B9818B1E3AAE0100E0CE7D /* Unsplash.plist */; };
+		C3B9818F1E3BE84200E0CE7D /* ImgifyPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B9818E1E3BE84200E0CE7D /* ImgifyPicture.swift */; };
+		C3B981911E3BEE6200E0CE7D /* ImgifyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B981901E3BEE6200E0CE7D /* ImgifyUser.swift */; };
+		C3C2C05B1E3AA9AB002507AC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C3C2C05A1E3AA9AB002507AC /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C36287B91E3AA7950057826B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C362879F1E3AA7940057826B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C36287A61E3AA7940057826B;
+			remoteInfo = imgify;
+		};
+		C36287C41E3AA7950057826B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C362879F1E3AA7940057826B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C36287A61E3AA7940057826B;
+			remoteInfo = imgify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		986C48D8C348109D6ABD9CB4 /* Pods-imgify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imgify/Pods-imgify.debug.xcconfig"; sourceTree = "<group>"; };
+		C349CD271E3AA8CF00439F0D /* ImgifyFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImgifyFetch.swift; path = network/ImgifyFetch.swift; sourceTree = "<group>"; };
+		C36287A71E3AA7950057826B /* imgify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imgify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36287AA1E3AA7950057826B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C36287AC1E3AA7950057826B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C36287AF1E3AA7950057826B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C36287B11E3AA7950057826B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C36287B31E3AA7950057826B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36287B81E3AA7950057826B /* imgifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imgifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36287BC1E3AA7950057826B /* imgifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imgifyTests.swift; sourceTree = "<group>"; };
+		C36287BE1E3AA7950057826B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36287C31E3AA7950057826B /* imgifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imgifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36287C71E3AA7950057826B /* imgifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imgifyUITests.swift; sourceTree = "<group>"; };
+		C36287C91E3AA7950057826B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B981891E3AAA8300E0CE7D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/imgify-fwmsupucmzhqqccpbyvedsgngmwu/Build/Products/Debug-appletvsimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		C3B9818B1E3AAE0100E0CE7D /* Unsplash.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Unsplash.plist; sourceTree = "<group>"; };
+		C3B9818E1E3BE84200E0CE7D /* ImgifyPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImgifyPicture.swift; path = model/ImgifyPicture.swift; sourceTree = "<group>"; };
+		C3B981901E3BEE6200E0CE7D /* ImgifyUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImgifyUser.swift; sourceTree = "<group>"; };
+		C3C2C05A1E3AA9AB002507AC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C9541DCD91CF515B2CB26F8D /* Pods-imgify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgify.release.xcconfig"; path = "Pods/Target Support Files/Pods-imgify/Pods-imgify.release.xcconfig"; sourceTree = "<group>"; };
+		E0DA90D7D157F0EDAD4CBAF3 /* Pods_imgify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imgify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C36287A41E3AA7940057826B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B9818A1E3AAA8300E0CE7D /* Alamofire.framework in Frameworks */,
+				072C95ABE245CCC5D711BB81 /* Pods_imgify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36287B51E3AA7950057826B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36287C01E3AA7950057826B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E07239E684974AD48562B7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3B981891E3AAA8300E0CE7D /* Alamofire.framework */,
+				E0DA90D7D157F0EDAD4CBAF3 /* Pods_imgify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA3ECA6E5B7979DA5011B6AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				986C48D8C348109D6ABD9CB4 /* Pods-imgify.debug.xcconfig */,
+				C9541DCD91CF515B2CB26F8D /* Pods-imgify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C349CD261E3AA8C300439F0D /* network */ = {
+			isa = PBXGroup;
+			children = (
+				C349CD271E3AA8CF00439F0D /* ImgifyFetch.swift */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		C362879E1E3AA7940057826B = {
+			isa = PBXGroup;
+			children = (
+				C3C2C05A1E3AA9AB002507AC /* Podfile */,
+				C36287A91E3AA7950057826B /* imgify */,
+				C36287BB1E3AA7950057826B /* imgifyTests */,
+				C36287C61E3AA7950057826B /* imgifyUITests */,
+				C36287A81E3AA7950057826B /* Products */,
+				AA3ECA6E5B7979DA5011B6AD /* Pods */,
+				8E07239E684974AD48562B7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C36287A81E3AA7950057826B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C36287A71E3AA7950057826B /* imgify.app */,
+				C36287B81E3AA7950057826B /* imgifyTests.xctest */,
+				C36287C31E3AA7950057826B /* imgifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C36287A91E3AA7950057826B /* imgify */ = {
+			isa = PBXGroup;
+			children = (
+				C3B9818D1E3BE82600E0CE7D /* model */,
+				C349CD261E3AA8C300439F0D /* network */,
+				C36287AA1E3AA7950057826B /* AppDelegate.swift */,
+				C36287AC1E3AA7950057826B /* ViewController.swift */,
+				C36287AE1E3AA7950057826B /* Main.storyboard */,
+				C36287B11E3AA7950057826B /* Assets.xcassets */,
+				C36287B31E3AA7950057826B /* Info.plist */,
+				C3B9818B1E3AAE0100E0CE7D /* Unsplash.plist */,
+			);
+			path = imgify;
+			sourceTree = "<group>";
+		};
+		C36287BB1E3AA7950057826B /* imgifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C36287BC1E3AA7950057826B /* imgifyTests.swift */,
+				C36287BE1E3AA7950057826B /* Info.plist */,
+			);
+			path = imgifyTests;
+			sourceTree = "<group>";
+		};
+		C36287C61E3AA7950057826B /* imgifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C36287C71E3AA7950057826B /* imgifyUITests.swift */,
+				C36287C91E3AA7950057826B /* Info.plist */,
+			);
+			path = imgifyUITests;
+			sourceTree = "<group>";
+		};
+		C3B9818D1E3BE82600E0CE7D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C3B9818E1E3BE84200E0CE7D /* ImgifyPicture.swift */,
+				C3B981901E3BEE6200E0CE7D /* ImgifyUser.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C36287A61E3AA7940057826B /* imgify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C36287CC1E3AA7950057826B /* Build configuration list for PBXNativeTarget "imgify" */;
+			buildPhases = (
+				7AE895410F67FC4BE085AEAB /* [CP] Check Pods Manifest.lock */,
+				C36287A31E3AA7940057826B /* Sources */,
+				C36287A41E3AA7940057826B /* Frameworks */,
+				C36287A51E3AA7940057826B /* Resources */,
+				90CAC464E765309341BD5ECE /* [CP] Embed Pods Frameworks */,
+				EF7029F242AB700A61BFE8CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imgify;
+			productName = imgify;
+			productReference = C36287A71E3AA7950057826B /* imgify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C36287B71E3AA7950057826B /* imgifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C36287CF1E3AA7950057826B /* Build configuration list for PBXNativeTarget "imgifyTests" */;
+			buildPhases = (
+				C36287B41E3AA7950057826B /* Sources */,
+				C36287B51E3AA7950057826B /* Frameworks */,
+				C36287B61E3AA7950057826B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C36287BA1E3AA7950057826B /* PBXTargetDependency */,
+			);
+			name = imgifyTests;
+			productName = imgifyTests;
+			productReference = C36287B81E3AA7950057826B /* imgifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C36287C21E3AA7950057826B /* imgifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C36287D21E3AA7950057826B /* Build configuration list for PBXNativeTarget "imgifyUITests" */;
+			buildPhases = (
+				C36287BF1E3AA7950057826B /* Sources */,
+				C36287C01E3AA7950057826B /* Frameworks */,
+				C36287C11E3AA7950057826B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C36287C51E3AA7950057826B /* PBXTargetDependency */,
+			);
+			name = imgifyUITests;
+			productName = imgifyUITests;
+			productReference = C36287C31E3AA7950057826B /* imgifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C362879F1E3AA7940057826B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = come.les69.imgify;
+				TargetAttributes = {
+					C36287A61E3AA7940057826B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					C36287B71E3AA7950057826B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C36287A61E3AA7940057826B;
+					};
+					C36287C21E3AA7950057826B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C36287A61E3AA7940057826B;
+					};
+				};
+			};
+			buildConfigurationList = C36287A21E3AA7940057826B /* Build configuration list for PBXProject "imgify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C362879E1E3AA7940057826B;
+			productRefGroup = C36287A81E3AA7950057826B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C36287A61E3AA7940057826B /* imgify */,
+				C36287B71E3AA7950057826B /* imgifyTests */,
+				C36287C21E3AA7950057826B /* imgifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C36287A51E3AA7940057826B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C2C05B1E3AA9AB002507AC /* Podfile in Resources */,
+				C36287B21E3AA7950057826B /* Assets.xcassets in Resources */,
+				C3B9818C1E3AAE0100E0CE7D /* Unsplash.plist in Resources */,
+				C36287B01E3AA7950057826B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36287B61E3AA7950057826B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36287C11E3AA7950057826B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AE895410F67FC4BE085AEAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90CAC464E765309341BD5ECE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-imgify/Pods-imgify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF7029F242AB700A61BFE8CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-imgify/Pods-imgify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C36287A31E3AA7940057826B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36287AD1E3AA7950057826B /* ViewController.swift in Sources */,
+				C3B981911E3BEE6200E0CE7D /* ImgifyUser.swift in Sources */,
+				C349CD281E3AA8CF00439F0D /* ImgifyFetch.swift in Sources */,
+				C3B9818F1E3BE84200E0CE7D /* ImgifyPicture.swift in Sources */,
+				C36287AB1E3AA7950057826B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36287B41E3AA7950057826B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36287BD1E3AA7950057826B /* imgifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36287BF1E3AA7950057826B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36287C81E3AA7950057826B /* imgifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C36287BA1E3AA7950057826B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C36287A61E3AA7940057826B /* imgify */;
+			targetProxy = C36287B91E3AA7950057826B /* PBXContainerItemProxy */;
+		};
+		C36287C51E3AA7950057826B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C36287A61E3AA7940057826B /* imgify */;
+			targetProxy = C36287C41E3AA7950057826B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C36287AE1E3AA7950057826B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C36287AF1E3AA7950057826B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C36287CA1E3AA7950057826B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		C36287CB1E3AA7950057826B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C36287CD1E3AA7950057826B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 986C48D8C348109D6ABD9CB4 /* Pods-imgify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = imgify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Uss.Enterprise.imgify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C36287CE1E3AA7950057826B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9541DCD91CF515B2CB26F8D /* Pods-imgify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = imgify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Uss.Enterprise.imgify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C36287D01E3AA7950057826B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = imgifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Uss.Enterprise.imgifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imgify.app/imgify";
+			};
+			name = Debug;
+		};
+		C36287D11E3AA7950057826B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = imgifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Uss.Enterprise.imgifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imgify.app/imgify";
+			};
+			name = Release;
+		};
+		C36287D31E3AA7950057826B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = imgifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Uss.Enterprise.imgifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = imgify;
+			};
+			name = Debug;
+		};
+		C36287D41E3AA7950057826B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = imgifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Uss.Enterprise.imgifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = imgify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C36287A21E3AA7940057826B /* Build configuration list for PBXProject "imgify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C36287CA1E3AA7950057826B /* Debug */,
+				C36287CB1E3AA7950057826B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C36287CC1E3AA7950057826B /* Build configuration list for PBXNativeTarget "imgify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C36287CD1E3AA7950057826B /* Debug */,
+				C36287CE1E3AA7950057826B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C36287CF1E3AA7950057826B /* Build configuration list for PBXNativeTarget "imgifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C36287D01E3AA7950057826B /* Debug */,
+				C36287D11E3AA7950057826B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C36287D21E3AA7950057826B /* Build configuration list for PBXNativeTarget "imgifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C36287D31E3AA7950057826B /* Debug */,
+				C36287D41E3AA7950057826B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C362879F1E3AA7940057826B /* Project object */;
+}
