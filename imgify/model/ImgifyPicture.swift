@@ -18,6 +18,7 @@ class ImgifyPicture {
     let likes: Int?
     let links: Dictionary<String, AnyObject>
     let urls: Dictionary<String, AnyObject>
+    let defaultUrl: String?
     let user: ImgifyUser
     
     
@@ -31,7 +32,7 @@ class ImgifyPicture {
         links = jsonObject["links"].dictionaryObject! as Dictionary<String, AnyObject>
         urls = jsonObject["urls"].dictionaryObject! as Dictionary<String, AnyObject>
         user = ImgifyUser(jsonUser: JSON(jsonObject["user"].dictionaryObject!))
-        
+        defaultUrl = urls["raw"] as? String
         
     }
     private class func convertStringtoDate(date:String?) -> Date? {

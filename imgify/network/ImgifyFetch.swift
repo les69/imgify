@@ -29,7 +29,7 @@ class ImgifyFetch{
         }
         return NSDictionary()
     }
-    public func getCuratedPhotos() -> Array<ImgifyPicture> {
+    public func getCuratedPhotos(picturesLoadedCallback:@escaping (Array<ImgifyPicture>) -> Void) -> Void  {
         let apiEndpoint = "\(self.unsplashURL)/photos/curated/?client_id=\(self.AppId)"
         var pictures = Array<ImgifyPicture>()
         Alamofire.request(apiEndpoint).responseJSON {   response in
@@ -37,12 +37,12 @@ class ImgifyFetch{
             case .success(let value):
                 let json = JSON(value)
                 pictures = json.map({(picture) in ImgifyPicture(jsonObject: picture.1)})
+                picturesLoadedCallback(pictures)
                 
             case .failure(let error):
                 print(error)
             }
         }
-        return pictures
     }
     
 }
